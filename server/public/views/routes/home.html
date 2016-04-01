@@ -1,0 +1,31 @@
+<h1>Sign Up To Be A Super Hero!</h1>
+
+<div ng-controller="HeroController">
+  <form>
+    <label for="alias">Alias</label>
+    <input ng-model="heroObject.alias" type="text" id="alias" /><br /><br />
+
+    <label for="first_name">First Name</label>
+    <input ng-model="heroObject.first_name" type="text" id="first_name" /><br /><br />
+
+    <label for="last_name">Last Name</label>
+    <input ng-model="heroObject.last_name" type="text" id="last_name" /><br /><br />
+
+    <label for="city">City</label>
+    <input ng-model="heroObject.city" type="text" id="city" /><br /><br />
+
+    <label for="power_name">Super Power</label>
+    <select ng-model="heroObject.power_name" type="text" id="power_name">
+      <option value="invisibility">Invisibility</option>
+      <option value="flight">Flight</option>
+      <option value="super_speed">Super Speed</option>
+      <option value="heat_vision">Heat Vision</option>
+      <option value="super_strength">Super Strength</option>
+      <option value="accelerated_healing">Accelerated Healing</option>
+      <option value="power_blast">Power Blast</option>
+      <option value="animal_affinity">Animal Affinity</option>
+    </select>
+  </form>
+
+  <button ng-click="clickMe(heroObject)">SUBMIT MY SUPERNESS</button>
+</div>
